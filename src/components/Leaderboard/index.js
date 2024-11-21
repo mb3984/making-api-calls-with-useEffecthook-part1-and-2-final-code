@@ -41,7 +41,7 @@ const Leaderboard = () => {
       const response = await fetch(url, options)
       const responseData = await response.json()
       if (response.ok) {
-        console.log('data':responseData)
+        console.log('data:', responseData)
         setApiResponse(prevApiResponse => ({
           ...prevApiResponse,
           status: apiStatusConstants.success,
